@@ -1,0 +1,184 @@
+/* Style Sheet */
+
+/**
+ * GLOBAL STYLING
+ */
+
+/* box model fix */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* ==========================================================================
+   Micro clearfix
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+img {
+	width: 100%;
+}
+
+body {
+	background-color: #fff;
+	font-family: 'Lora', serif;
+	font-size: 16px;
+	color: #242321;	
+}
+body ul{
+	list-style-type:  none;
+}
+
+p {
+	font-family: 'Hind', sans-serif;
+	line-height: 160%;
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+a {
+	color: #fff; /* orange */
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #a13b00; /* dark orange */
+}
+
+/* HEADER STYLING */
+header .container-fluid {
+	background-color: #702929;
+}
+header img {
+	max-width: 100px;
+}
+
+header ul {
+	list-style: none;
+	margin: 10px;
+	padding: 0px;
+}
+
+header li {
+	float: none;
+	text-align: center;
+	margin-right: 18px;
+	margin-top: 40px;
+	margin-left: 20px;
+	margin: 15px;
+	font-family: 'Hind', sans-serif;
+}
+
+#hablas {
+	margin: 50px auto;
+	margin-bottom: vhmax;
+	/* background-color: peachpuff; */
+}
+
+.btn {
+    font-family: 'Hind', sans-serif;
+}
+
+#buttons {
+	padding-top: 50px;
+	text-align: center;
+}
+
+.btn-primary {
+	background-color: darkred;
+	border-color: darkred;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #ffc500;
+    border-color: #ffc500; 
+}
+
+.container-fluid {
+	background-color: #702929;
+}
+
+footer ul {
+	list-style: none;
+	margin: 10px;
+	padding: 0px;
+	padding-bottom: 100px;
+}
+
+footer li {
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+	font-family:'Hind', sans-serif;
+}
+
+.Photos img {
+	object-fit: cover;
+	float: left;
+}
+
+#logo-big {
+	display: none;
+}
+
+#logo-mid {
+	display: none;
+}
+
+#logo-small {
+	display: none;
+	width: 75px;
+}
+
+@media only screen and (min-width: 1px) and (max-width: 574px) {
+	#logo-small{
+		display: block;
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+	#logo-mid {
+		display: block;
+	}
+	header li {
+		float: right;
+		margin-right: 18px;
+		margin-top: 40px;
+		font-family: 'Hind', sans-serif;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 2000px) {
+	#logo-big {
+		display: block;
+	}
+	header li {
+		float: right;
+		margin-right: 18px;
+		margin-top: 40px;
+		font-family: 'Hind', sans-serif;
+	}
+}
+
